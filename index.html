@@ -18,3 +18,95 @@
     </p>
 </body>
 </html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>앱 다운로드 센터</title>
+    <style>
+        body {
+            font-family: 'Apple SD Gothic Neo', sans-serif;
+            text-align: center;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 20px;
+            shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .download-btn {
+            display: block;
+            padding: 18px;
+            margin: 15px 0;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .download-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* 안드로이드 스타일 */
+        .android {
+            background-color: #3DDC84;
+            box-shadow: 0 4px #2eb86b;
+        }
+
+        /* iOS 스타일 */
+        .ios {
+            background-color: #000000;
+            box-shadow: 0 4px #333;
+        }
+
+        .info {
+            font-size: 14px;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>📱 앱 설치하기</h1>
+        <p>기기에 맞는 버전을 선택해 주세요.</p>
+
+        <a href="https://raw.githubusercontent.com/namsu1482/iosInstall/main/railplusSdkTestApp.apk" class="download-btn android">
+            Android용 APK 다운로드
+        </a>
+
+        <a href="itms-services://?action=download-manifest&url=https://namsu1482.github.io/iosInstall/manifest.plist"
+            class="download-btn ios">
+            iPhone용 앱 설치
+        </a>
+
+        <div class="info">
+            <p>* Android: '출처를 알 수 없는 앱' 허용이 필요할 수 있습니다.<br>
+                * iOS: 설정 > 일반 > 기기 관리에서 신뢰 설정을 확인하세요.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
